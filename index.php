@@ -57,11 +57,47 @@ echo "{$courses['backend'][0]} <br>";
 $alumno ='jose';
 $jose = 'Estudiante de PHP';
 
-echo "$alumno es ${$alumno}";
+echo "$alumno es ${$alumno} <br>";
 
 
 
+/*Argumentos 
+
+manejo de valores 
+*/
+function greet($name)
+{
+    return "hola ,$name <br>" ;
+}
 
 
+echo greet("Italo");
 
 
+/*Argumentos 
+
+manejo de referencias  &
+*/
+$course ="PHP";
+function path(&$course)
+{
+    $course ="Laravel ";
+    echo $course , "<br>";
+
+}
+path($course);
+echo $course , "<br>";
+
+
+/*Argumentos 
+
+manejo como predeterminado
+*/
+
+function saludo($name="jose")
+{
+    return "Hola $name <br> ";
+}
+
+echo saludo();
+echo saludo("daniel");
