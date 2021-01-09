@@ -135,3 +135,15 @@ $es =function($name)
 };
 
 echo Saludoo($es,'Jose');
+
+/* Array simple
+
+*/
+
+$courses = ['JavaScript',
+'Laravel',
+'PHP',
+'Vue.js'];
+
+echo "<pre>";
+var_dump($courses);
