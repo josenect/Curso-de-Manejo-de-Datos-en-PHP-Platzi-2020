@@ -101,3 +101,37 @@ function saludo($name="jose")
 
 echo saludo();
 echo saludo("daniel");
+
+
+/* Return
+
+*/
+function retur()
+{
+    return ["PDF" , "vista/inicio"];
+}
+
+
+var_dump(retur() ,"<br>" ) ;
+
+
+/* Closure
+funciones anonimas variables que necesitan logica
+
+*/
+
+function Saludoo(closure $lang , $name)
+{
+    return $lang($name);
+}
+$en =function($name)
+{ 
+    return "Hello , $name ";
+};
+
+$es =function($name)
+{ 
+    return "Hola , $name";
+};
+
+echo Saludoo($es,'Jose');
