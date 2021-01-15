@@ -287,3 +287,5 @@ $courses = ['javascript', 'php', 'laravel'];
 $categories = ['frontend', 'backend', 'framework'];
 
 var_dump(array_combine($categories, $courses));
+
+/// curso terminado
